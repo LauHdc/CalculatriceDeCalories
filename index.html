@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Calories</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
+	
+<body>
+
+	<main class="container">
+	
+		<div class="jumbotron text-center">
+			
+			<h1>Calculer les calories</h1>
+			
+		</div>
+		
+		<div class="mb-2">
+			
+			<button class="btn btn-secondary deleteAllBtn">Tout supprimer</button>
+			
+		</div>
+		
+		<section>
+		
+			<div class="card">
+  				
+				<div class="card-body">
+					
+					<h5 class="card-title">Ajouter un aliment</h5>
+					
+					<form>
+					
+						<input type="text" name="aliment" id="aliment" placeholder="Ajouter un aliment" class="form-control">
+						
+						<br>
+						
+						<input type="number" name="calories" id="calories" placeholder="Nombre de calories" class="form-control">
+						
+						<br>
+						
+						<button class="btn btn-info add-btn"><i class="fas fa-plus"></i> Ajouter</button>
+						
+						<button class="btn btn-warning update-btn"><i class="fas fa-edit"></i> Mettre à jour</button>
+						
+						<button class="btn btn-danger delete-btn"><i class="fas fa-trash-alt"></i> Supprimer</button>
+						
+						<button class="btn btn-success back-btn"><i class="fas fa-chevron-left"></i> Annuler</button>
+						
+					</form>
+				  
+				</div>
+				
+			</div>
+			
+			<br>
+			
+			<!-- Emplacement pour le total de calories -->
+			
+			<h3 class="text-center">Calories consommées : <span class="total-calories">0</span></h3>
+			
+			<!-- Liste des aliments -->
+			
+			<ul id="item-list" class="list-group list-group-flush">
+				
+				<!--<li class="list-group-item">An item</li>
+				<li class="list-group-item">A second item</li>
+				<li class="list-group-item">A third item</li>-->
+				
+			 </ul>
+		
+		</section>
+	
+	</main>
+	
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fec906b625.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
